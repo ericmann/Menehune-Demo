@@ -1,0 +1,3 @@
+[submodule "lib/menehune"]
+	path = lib/menehune
+	url = git@bitbucket.org:eamann/menehune.git

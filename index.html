@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+		<title>Shakespearean Monkeys - Powered by jQuery and Menehune</title>
+		
+		<link href="style.css" rel="stylesheet" />    		
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<!--script type="text/javascript" src="lib/menehune/menehune.min.js"></script-->
+	</head>
+	<body>
+		<div id="container">
+			<h1>Shakespearean Monkeys</h1>
+			<div>
+				<div>Target:</div>
+				<textarea id="targettext" name="targettext" rows="6" cols="45"></textarea>
+			</div>
+			<div>
+				<div>Current:</div>
+				<textarea id="currenttext" name="currenttext" rows="6" cols="45"></textarea>
+			</div>
+			<input type="button" id="startbutton" value="Queue" />                
+			<input type="button" id="cancelbutton" value="Cancel All" disabled="disabled" />                
+			<span id="status"></span>
+			<div>
+				<label for="generation">Generation:</label><span id="generation"></span>
+			</div>
+			<div>
+				<label for="gps">Generations / sec:</label><span id="gps"></span>
+			</div>
+			<div>
+				<small>Based heavily on <a href="http://www.hanselman.com/blog/SolvingTheShakespeareMillionMonkeysProblemInRealtimeWithParallelismAndSignalR.aspx">the ASP.Net SignalR demo by Scott Hanselman and Paul Batum</a>.</small>
+			</div>
+		</div>
+		<img src="img/HamletMonkey.jpg" alt="monkey" class="monkey" />
+		<script type="text/javascript" src="lib/scripts.js"></script>
+	</body>
+</html>
